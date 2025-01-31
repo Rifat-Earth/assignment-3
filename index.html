@@ -12,15 +12,20 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .font-adlam{
+        .font-adlam {
             font-family: "ADLaM Display", serif;
+    }
+    *{
+      margin:0;
+      padding: 0;
+
     }
     </style>
 </head>
 <body class="font-adlam">
     <!-- header -->
       <!-- navbar -->
-        <div class="navbar bg-base-100 bg-pink-50">
+        <div class="navbar bg-base-100 bg-pink-50 w-full">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -46,7 +51,7 @@
                 </ul>
               </div>
               <div class="flex">
-                <img class="ml-64 lg:ml-0" src="c1-assets/logo-header.png" alt="logo">
+                <img class="ml-64 lg:ml-8" src="c1-assets/logo-header.png" alt="logo">
               <a class="btn btn-ghost text-xl hidden lg:block">Browse<span class="text-orange-300">4</span>Pets</a>
               </div>
             </div>
@@ -66,7 +71,7 @@
           </div>
           <!-- banner -->
            <section>
-        <div class="flex flex-col lg:flex-row p-10 lg:ml-24 w-full lg:justify-center z-20">
+        <div class="flex flex-col lg:flex-row p-10 lg:ml-24 w-full lg:justify-center">
            <div class=" flex-1 mt-12 gap-y-5">
              <div class="font-bold text-3xl mb-2">
                 Pamper Your Pet,<br> Because They Deserve<br> the Bes
@@ -83,7 +88,7 @@
     </section>
      <!-- main -->
        <!-- Browse -->
-     <h1 class="mt-12 text-3xl text-center lg:text-start lg:ml-24">Browse By Categories</h1>
+     <h1 class="mt-12 text-3xl text-center lg:text-start lg:ml-28">Browse By Categories</h1>
        <div class="grid lg:gap-5 mt-8 grid-cols-2 lg:flex lg:ml-24">
         <!-- card 1 -->
       <div class="bg-yellow-300 p-10 m-5 rounded-lg">
@@ -159,7 +164,8 @@
                             </div>
     </div>  
       <!-- trending -->
-    <section class="ml-24 mt-12">
+  <section class="flex flex-col lg:flex-row lg:gap-x-10 bg-yellow-100 w-full h-full ">
+    <section class="items-center ml-4 lg:ml-24 mt-12">
        <div class="mb-8 font-bold text-3xl">Trending Pet Products</div>
        <div class="">
         <div class="card bg-base-100 w-96 shadow-xl bg-yellow-300">
@@ -175,10 +181,163 @@
         </div>
       </div></div>
     </section>
-    <!--  -->
-        <div>
-
-        </div>           
+    <!-- trending card -->
+        <div class=" grid grid-cols-2 p-4 lg:grid-cols-3 items-center gap-y-5 mt-24 lg:gap-x-10">
+          <!-- card 1 -->
+          <div class="card bg-base-100 w-48 h-60 gap-x-2 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/dog-cartoon.png"
+                alt="dog"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold text-sm">4.5</h2>
+              </div>
+              <p class="text-sm">Ped Bed</p>
+              <p class="text-sm">$39.99</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card bg-base-100 w-48 h-60 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex gap-x-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold">4.5</h2>
+              </div>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card bg-base-100 w-48 h-60 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/rabbit-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex gap-x-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold">4.5</h2>
+              </div>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card bg-base-100 w-48 h-60 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex gap-x-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold">4.5</h2>
+              </div>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="card bg-base-100 w-48 h-60 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/bird-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex gap-x-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold">4.5</h2>
+              </div>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="card bg-base-100 w-48 h-60 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/rabbit-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex gap-x-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold">4.5</h2>
+              </div>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="card bg-base-100 w-48 h-60 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/bird-cartoon.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex gap-x-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold">4.5</h2>
+              </div>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="card bg-base-100 w-48 h-60 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/pet-couch.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex gap-x-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold">4.5</h2>
+              </div>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card 9-->
+          <div class="card bg-base-100 w-52 h-60 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="c1-assets/pet-couch.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating flex gap-x-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
+                <h2 class="font-bold">4.5</h2>
+              </div>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+        </div>
+  </section>           
       <!-- footer -->
 </body>
 </html>
