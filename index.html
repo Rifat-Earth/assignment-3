@@ -71,19 +71,15 @@
           </div>
           <!-- banner -->
            <section>
-        <div class="flex flex-col lg:flex-row p-10 lg:ml-24 w-full lg:justify-center">
-           <div class=" flex-1 mt-12 gap-y-5">
-             <div class="font-bold text-3xl mb-2">
-                Pamper Your Pet,<br> Because They Deserve<br> the Bes
-             </div>
-              <div class="text-xsm mb-2">
-                Discover a world of treats, toys, and<br> essentials handpicked for your furry friends.<br>Shop now and make tails wag with joy!
-              </div>
-              <div class="btn btn-warning">
-                 <button class="animate-bounce"> Find a pet</button>
-              </div>
+        <div class="flex flex-col lg:flex-col p-10 lg:ml-24 w-full lg:justify-center">
+           <div class=" flex-1 mb-12 gap-y-5 absolute ">
+               <p class="font-bold text-3xl mb-2"> Pamper Your Pet,<br> Because They Deserve<br> the Bes</p>
+               <p class="text-xsm mb-4" > Discover a world of treats, toys, and<br> essentials handpicked for your furry friends.<br>Shop now and make tails wag with joy!</p>
+                 <button class="animate-bounce btn btn-warning mt-2"> Find a pet</button>
          </div>
-           <img class="w-3/4  lg:w-3/4 mr-24 z-20" src="c1-assets/cat-big.png" alt="cat">
+         <div>
+           <img class="h-3/4 lg:w-3/4 mr-24" src="c1-assets/cat-big.png" alt="cat">
+        </div>
         </div>
     </section>
      <!-- main -->
@@ -167,47 +163,51 @@
   <section class="flex flex-col lg:flex-row lg:gap-x-10 bg-yellow-100 w-full h-full ">
     <section class="items-center ml-4 lg:ml-24 mt-12">
        <div class="mb-8 font-bold text-3xl">Trending Pet Products</div>
-       <div class="">
         <div class="card bg-base-100 w-96 shadow-xl bg-yellow-300">
         <div class="card-body items-start text-start gap-y-5">
           <h2 class="card-title text-xsm">T-Shirt For Dogs</h2>
           <p>Discover a world treats,toys and<br>essential handpicked for</p>
-          <div class="card-actions">
-            <button class="btn bg-white-400">Shop Now</button>
-            <figure class="px-10 pt-10">
-                <img src="c1-assets/cute-pet-mid.png" alt="dog" class="rounded-xl" />
-              </figure>
           </div>
+          <div class="card-actions">
+            <button class="btn bg-white-400 absolute ml-8">Shop Now</button>
+            <figure class="px-16 pt-4 ml-8">
+                <img src="c1-assets/cute-pet-mid.png" alt="dog" class="rounded-xl"/>
+              </figure>
         </div>
-      </div></div>
+      </div>
+    </div>
     </section>
     <!-- trending card -->
-        <div class=" grid grid-cols-2 p-4 lg:grid-cols-3 items-center gap-y-5 mt-24 lg:gap-x-10">
+        <div class=" grid grid-cols-2 p-4 lg:grid-cols-3 items-center gap-y-10 mt-24 lg:gap-x-10">
           <!-- card 1 -->
-          <div class="card bg-base-100 w-48 h-60 gap-x-2 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="c1-assets/dog-cartoon.png"
-                alt="dog"
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Fish"
                 class="rounded-xl" />
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
-              <div class="rating flex">
+              <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
-                <h2 class="font-bold text-sm">4.5</h2>
+                <h2 class="font-bold">4.5</h2>
               </div>
-              <p class="text-sm">Ped Bed</p>
-              <p class="text-sm">$39.99</p>
+              <p>Ped Bed</p>
+              <p>$39.99</p>
             </div>
           </div>
           <!-- card 2 -->
-          <div class="card bg-base-100 w-48 h-60 shadow-xl">
-            <figure class="px-10 pt-10">
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
               <img src="c1-assets/fish-cartoon.png"
-                alt="Shoes"
-                class="rounded-xl" />
+                alt="Fish"
+                class="rounded-xl"/>
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
               <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
@@ -218,13 +218,15 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="card bg-base-100 w-48 h-60 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="c1-assets/rabbit-cartoon.png"
-                alt="Shoes"
-                class="rounded-xl" />
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Fish"
+                class="rounded-xl"/>
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
               <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
@@ -235,13 +237,15 @@
             </div>
           </div>
           <!-- card 4 -->
-          <div class="card bg-base-100 w-48 h-60 shadow-xl">
-            <figure class="px-10 pt-10">
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
               <img src="c1-assets/fish-cartoon.png"
-                alt="Shoes"
-                class="rounded-xl" />
+                alt="Fish"
+                class="rounded-xl"/>
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
               <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
@@ -252,13 +256,15 @@
             </div>
           </div>
           <!-- card 5 -->
-          <div class="card bg-base-100 w-48 h-60 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="c1-assets/bird-cartoon.png"
-                alt="Shoes"
-                class="rounded-xl" />
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Fish"
+                class="rounded-xl"/>
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
               <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
@@ -269,13 +275,15 @@
             </div>
           </div>
           <!-- card 6 -->
-          <div class="card bg-base-100 w-48 h-60 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="c1-assets/rabbit-cartoon.png"
-                alt="Shoes"
-                class="rounded-xl" />
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Fish"
+                class="rounded-xl"/>
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
               <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
@@ -286,13 +294,15 @@
             </div>
           </div>
           <!-- card 7 -->
-          <div class="card bg-base-100 w-48 h-60 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="c1-assets/bird-cartoon.png"
-                alt="Shoes"
-                class="rounded-xl" />
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Fish"
+                class="rounded-xl"/>
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
               <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
@@ -303,13 +313,15 @@
             </div>
           </div>
           <!-- card 8 -->
-          <div class="card bg-base-100 w-48 h-60 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="c1-assets/pet-couch.png"
-                alt="Shoes"
-                class="rounded-xl" />
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Fish"
+                class="rounded-xl"/>
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
               <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
@@ -320,13 +332,15 @@
             </div>
           </div>
           <!-- card 9-->
-          <div class="card bg-base-100 w-48 h-60 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="c1-assets/pet-couch.png"
-                alt="Shoes"
-                class="rounded-xl" />
+          <div class="card bg-base-100 h-32 w-52 items-center shadow-xl flex-row">
+            <div>
+            <figure class="items-center px-4">
+              <img src="c1-assets/fish-cartoon.png"
+                alt="Fish"
+                class="rounded-xl"/>
             </figure>
-            <div class="card-body items-center text-center">
+          </div>
+            <div class="card-body absolute ml-16">
               <!-- rating -->
               <div class="rating flex gap-x-2">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"/>
@@ -352,13 +366,13 @@
               <div><img class="h-96" src="c1-assets/cute-dog-mid.png" alt="low"></div>
             </div>
              </section>
-          <div class="w-full lg:w-96 flex bg-blue-400 rounded-lg">
-              <div class="text-center mt-28 ml-4">
+          <div class="w-full lg:w-96 bg-blue-400 rounded-lg">
+              <div class="text-center mt-8 ml-4 absolute">
                 <p class="font-bold text-xl">T-shirt for dog</p>
-                <p class="font-bold mt-4">$7.99</p>
+                <p class="font-bold mt-4 text-3xl text-yellow-300">$7.99</p>
               </div>
-              <figure class="">
-                <img src="c1-assets/cute-pet-small.png"
+              <figure class="ml-24 mt-12">
+                <img src="c1-assets/cute-pet-mid.png"
                   alt="kutta" />
               </figure>
             </div>
@@ -369,7 +383,7 @@
               <div class="card bg-base-100 w-full lg:w-3/4 shadow-xl flex-row lg:items-center">
                 <div class="flex flex-col lg:flex-row sm:gap-2 items-center">
                 <figure class="px-10 pt-10 justify-center">
-                  <img class="ml-28" src="c1-assets/cute-pet-mid.png"
+                  <img class="ml-28" src="c1-assets/cute-pet-small.png"
                     alt="dog"
                     class="rounded-xl" />
                 </figure>
